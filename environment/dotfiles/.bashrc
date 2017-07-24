@@ -1,4 +1,4 @@
-export TERM=screen-256color
+#export TERM=screen-256color
 #Colors definition
 BLACK="\[\033[0;30m\]"
 DARK_GRAY="\[\033[1;30m\]"
@@ -220,4 +220,5 @@ run_on_prompt_command()
 
 PROMPT_COMMAND="run_on_prompt_command"
 export EDITOR="vim"
+. /etc/environment
 

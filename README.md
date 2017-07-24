@@ -8,7 +8,7 @@ In particular, the fonts should support Powerline Icons
 
 ## Installation Powerline capable fonts
 
-``
+```
 https://github.com/ryanoasis/nerd-fonts
 ```
 or

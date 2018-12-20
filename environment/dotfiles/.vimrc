@@ -12,8 +12,10 @@ highlight ColorColumn ctermbg=darkgray
 set autoindent
 set cindent
 set exrc
+set hlsearch
 execute pathogen#infect()
 nmap <F8> :TagbarToggle<CR>
+nmap <F5> :!make clean && make<CR>
 map <C-n> :NERDTreeToggle<CR>
 set secure
 set t_Co=256
@@ -56,10 +58,13 @@ inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
 imap <C-@> <C-Space>
 
 " Popup menu hightLight Group
-highlight Pmenu ctermbg=13 guibg=LightGray
-highlight PmenuSel ctermbg=7 guibg=DarkBlue guifg=White
-highlight PmenuSbar ctermbg=7 guibg=DarkGray
-highlight PmenuThumb guibg=Black
+"
+highlight Pmenu ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#64666d gui=NONE
+highlight PmenuSel ctermfg=NONE ctermbg=24 cterm=NONE guifg=NONE guibg=#204a87 gui=NONE
+"highlight Pmenu ctermbg=13 guibg=LightGray
+"highlight PmenuSel ctermbg=7 guibg=DarkBlue guifg=White
+"highlight PmenuSbar ctermbg=7 guibg=DarkGray
+"highlight PmenuThumb guibg=Black
 
 " Enable global scope search
 let OmniCpp_GlobalScopeSearch = 1
@@ -79,7 +84,8 @@ let OmniCpp_SelectFirstItem = 0
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_alt_sep = '>>>'
 let g:airline_powerline_fonts = 1
-
+"" This is a fix for wrapping in WSL
+"set ambiwidth=double
 " some fixes
 "let g:airline_symbols = {}
 "let g:airline_symbols.maxlinenr = ''

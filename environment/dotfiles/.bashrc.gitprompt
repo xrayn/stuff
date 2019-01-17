@@ -148,7 +148,7 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 #xrandr --output DVI-I-2 --primary
-export PATH="/home/ar/repositories/blockchain-integrity-protected-logs/fabric/fabric-samples/bin:/$HOME/texlive/bin/x86_64-linux/:$HOME/.pyenv/bin:$HOME/bin:$PATH"
+export PATH="$HOME/.local/bin:/$HOME/texlive/bin/x86_64-linux/:$HOME/.pyenv/bin:$HOME/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 

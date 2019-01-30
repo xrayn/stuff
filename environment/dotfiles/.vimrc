@@ -25,6 +25,7 @@ colorscheme molokai
 "colorscheme solarized
 set whichwrap+=<,>,h,l,[,]
 
+
 set laststatus=2
 set nocscopeverbose
 
@@ -106,4 +107,14 @@ let g:syntastic_aggregate_errors = 1
 let g:syntastic_error_symbol = "✗"
 let g:syntastic_warning_symbol = "⚠"
 let g:syntastic_enable_highlighting = 1
+
+
+" some NERDTree stuff
+
+let NERDTreeMinimalUI = 1
+
+" If linux kernel coding style plugin is used
+" force plugin to only be active on certain folders
+"
+"let g:linuxsty_patterns = [ "/linux/", "/kernel/" ]
 

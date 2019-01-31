@@ -74,7 +74,7 @@ set autoindent
 set cindent
 set exrc
 set hlsearch
-execute pathogen#infect()
+"execute pathogen#infect()
 nmap <F8> :TagbarToggle<CR>
 nmap <F5> :!make clean && make<CR>
 map <C-n> :NERDTreeToggle<CR>

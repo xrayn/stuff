@@ -3,7 +3,7 @@
 
 
 # Fonts
-Generally installation of additional fonts is needed to make use of some configurations.
+Installation of additional fonts is needed to make use of terminal and application specific configurations.
 In particular, the fonts should support Powerline Icons
 
 ## Installation Powerline capable fonts

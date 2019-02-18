@@ -37,6 +37,14 @@ Plugin 'tomasr/molokai'
 Plugin 'plasticboy/vim-markdown'
 
 
+" Snipped Plugins
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+
+" Optional:
+Plugin 'honza/vim-snippets'
+
 
 " testing
 
@@ -77,7 +85,7 @@ set hlsearch
 "execute pathogen#infect()
 nmap <F8> :TagbarToggle<CR>
 nmap <F5> :!make clean && make<CR>
-map <C-n> :NERDTreeToggle<CR>
+nmap <C-n> :NERDTreeToggle<CR>
 set secure
 set t_Co=256
 "let g:solarized_termcolors=256
@@ -172,10 +180,22 @@ let g:syntastic_enable_highlighting = 1
 
 " some NERDTree stuff
 
-let NERDTreeMinimalUI = 1
+let NERDTreeMinimalUI = 0
 
 " If linux kernel coding style plugin is used
 " force plugin to only be active on certain folders
 "
 "let g:linuxsty_patterns = [ "/linux/", "/kernel/" ]
+
+" multi cursor mappings
+let g:multi_cursor_use_default_mapping=0
+
+let g:multi_cursor_start_word_key      = '<C-d>'
+let g:multi_cursor_select_all_word_key = '<A-d>'
+let g:multi_cursor_start_key           = 'g<C-d>'
+let g:multi_cursor_select_all_key      = 'g<A-d>'
+let g:multi_cursor_next_key            = '<C-d>'
+let g:multi_cursor_prev_key            = '<C-p>'
+let g:multi_cursor_skip_key            = '<C-x>'
+let g:multi_cursor_quit_key            = '<Esc>'
 
